@@ -1,0 +1,38 @@
+let link;
+function setup(){
+    for(let i=0; i <25; i++){
+        const link = createA("#","Yahoo!");
+        link.position (random(500),random(500));
+
+    createCanvas(200,200);
+    background(190);
+    ellipse(100,100,100);
+
+}
+
+    const p = createP("this is from p5js");
+    p.position(200,100);
+
+    link = createA("#", "Yahoo!");
+    link.mouseClicked(onMouseClicked);
+    link.mouseOver(onMouseOver);
+    link.mouseOUt(onMouseOut);
+
+}
+
+function onMouseClicked(){
+    link.style("background-color","green");
+    link.style("color","white");
+}
+
+function onMouseOver(){
+    link.style("background-color","pink");
+    link.style("color","black");
+
+}
+
+function onMouseOut(){
+    link.style("background-color","red");
+    link.style("color","white");
+
+}
