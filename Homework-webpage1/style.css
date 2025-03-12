@@ -121,10 +121,10 @@
     text-align: justify;
 }
 
-media (min-aspect-ratio: 16/9) {
+media(min-aspect-ratio: 16/9) {
     .background-clip {
         width: 100%;
-        height: auto;
+        height：auto;
     }
 }
 
